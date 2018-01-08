@@ -35,9 +35,6 @@ require 'chroma/converters/rgb_converter'
 require 'chroma/converters/hsl_converter'
 require 'chroma/converters/hsv_converter'
 
-# Extensions
-require 'chroma/extensions/string'
-
 # The main module.
 module Chroma
   class << self
