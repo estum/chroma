@@ -36,8 +36,8 @@ describe Chroma::Color do
 
     describe '#to_hex8' do
       it 'returns the hex8 string' do
-        expect(green.to_hex8).to eq('#ff008000')
-        expect(blue.to_hex8).to  eq('#800000ff')
+        expect(green.to_hex8).to eq('#008000ff')
+        expect(blue.to_hex8).to  eq('#0000ff80')
       end
     end
 
@@ -110,7 +110,7 @@ describe Chroma::Color do
       it 'returns the appropriate string according to format' do
         expect('#ff0000'.paint.to_s).to                    eq('#ff0000')
         expect('#f00'.paint.to_s).to                       eq('#f00')
-        expect('#80ff0000'.paint.to_s).to                  eq('#80ff0000')
+        expect('#ff000080'.paint.to_s).to                  eq('#ff000080')
         expect('hsl(120, 100%, 50%)'.paint.to_s).to        eq('hsl(120, 100%, 50%)')
         expect('hsla(120, 100%, 50%, 0.5)'.paint.to_s).to  eq('hsla(120, 100%, 50%, 0.5)')
         expect('hsv(120, 100%, 50%)'.paint.to_s).to        eq('hsv(120, 100%, 50%)')
